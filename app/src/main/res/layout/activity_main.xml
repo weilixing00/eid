@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -40,12 +43,12 @@
         app:lock9_lineColor="@color/blue_light"
         app:lock9_lineWidth="8dp"
         app:lock9_autoLink="false"
+        android:visibility="gone"
         app:lock9_enableVibrate="true"
         app:lock9_vibrateTime="20" />
 
-
     <com.xinge.eid.view.identitykeyboard.IdentityCardView
-        android:id="@+id/customKeyboard"
+        android:id="@+id/customKeyboard1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
@@ -58,4 +61,6 @@
         android:keyTextSize="31dp"
         android:labelTextSize="23.04sp"
         android:shadowRadius="0" />
+
 </LinearLayout>
+</ScrollView>

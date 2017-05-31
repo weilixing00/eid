@@ -28,7 +28,7 @@ public class MainActivity extends BaseActivity {
     TextView tv;
     @BindView(R.id.et)
     EditText writebankcard_mobileedit;
-    @BindView(R.id.customKeyboard)
+    @BindView(R.id.customKeyboard1)
     IdentityCardView customKeyboard;
     private CustomKeyboard mCustomKeyboard;
 
@@ -56,7 +56,7 @@ public class MainActivity extends BaseActivity {
 //        }
 
         //2 初试化键盘
-        IdentityCardView keyboardView = (IdentityCardView) findViewById(R.id.customKeyboard);
+        IdentityCardView keyboardView = (IdentityCardView) findViewById(R.id.customKeyboard1);
         mCustomKeyboard = new CustomKeyboard(MainActivity.this, keyboardView, writebankcard_mobileedit);
         mCustomKeyboard.showKeyboard();
 
