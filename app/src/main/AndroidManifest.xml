@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.xinge.eid">
 
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+
     <application
         android:name=".base.MyApplication"
         android:allowBackup="true"
@@ -10,12 +14,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" >
+        <activity android:name=".MainActivity">
 
         </activity>
         <activity android:name=".mvp.ui.activity.blank.BlankActivity" />
         <activity android:name=".mvp.ui.activity.blank.BlankActivity1" />
         <activity android:name=".mvp.MainActivity">
+
+        </activity>
+        <activity android:name=".mvp.ui.activity.GestureSettingActivity">
+
+        </activity>
+        <activity android:name=".mvp.ui.activity.GestureEnterActivity">
+
+        </activity>
+        <activity android:name=".mvp.ui.activity.LoginActivity" >
+
+        </activity>
+        <activity android:name=".mvp.ui.activity.GestureShowActivity">
+
+        </activity>
+        <activity android:name=".mvp.ui.activity.identity.IdentityResultActivity">
+
+        </activity>
+        <activity android:name=".mvp.ui.activity.PhoneCheInputActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
