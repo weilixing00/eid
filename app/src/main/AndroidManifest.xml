@@ -4,6 +4,10 @@
 
 
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
 
 
     <application
@@ -28,11 +32,10 @@
         <activity android:name=".mvp.ui.activity.GestureEnterActivity">
 
         </activity>
-        <activity android:name=".mvp.ui.activity.LoginActivity" >
+        <activity android:name=".mvp.ui.activity.LoginActivity">
 
         </activity>
-        <activity android:name=".mvp.ui.activity.GestureShowActivity">
-        </activity>
+        <activity android:name=".mvp.ui.activity.GestureShowActivity"></activity>
         <activity android:name=".mvp.ui.activity.identity.IdentityResultActivity">
 
         </activity>
@@ -42,12 +45,21 @@
         <activity android:name=".mvp.ui.HistoryRecordActivity">
 
         </activity>
+        <activity android:name=".mvp.ui.activity.identity.IdeGatStep1Activity">
+        </activity>
         <activity android:name=".mvp.ui.activity.identity.IdeGatStep2Activity">
+
+        </activity>
+
+        <activity
+            android:name=".mvp.ui.activity.camera.CameraActivity">
+
+        </activity>
+        <activity android:name=".mvp.ui.activity.camera.CameraResultActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
     </application>
 

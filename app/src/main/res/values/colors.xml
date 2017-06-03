@@ -14,4 +14,6 @@
     <color name="gray_line">#d0d0d0</color>
     <color name="gray_shallow">#aaaaaa</color>
     <color name="green">#2ec95e</color>
+    <color name="dark_trans">#8A000000</color>
+    <color name="green1">#2dcc70</color>
 </resources>

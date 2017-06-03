@@ -73,7 +73,21 @@ dependencies {
         exclude group: 'com.android.support'
     }
 
-        //筛选菜单
+
+    //rx系列
+    compile 'com.jakewharton.rxbinding2:rxbinding:2.+'
+
+    //权限
+    compile 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar'
+
+    //图片
+    compile 'com.facebook.fresco:fresco:+'
+
+    compile 'com.github.bumptech.glide:glide:4.0.0-RC0'
+    compile 'com.android.support:support-v4:25.3.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.0.0-RC0'
+
+    //筛选菜单
     compile 'com.github.dongjunkun:DropDownMenu:1.0.4'
     //kotlin
     compile 'com.android.support:support-vector-drawable:25.3.1'

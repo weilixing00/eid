@@ -58,15 +58,17 @@ public class MainActivity extends BaseActivity {
         //2 初试化键盘
         IdentityCardView keyboardView = (IdentityCardView) findViewById(R.id.customKeyboard1);
         mCustomKeyboard = new CustomKeyboard(MainActivity.this, keyboardView, writebankcard_mobileedit);
-        mCustomKeyboard.showKeyboard();
+//        mCustomKeyboard.showKeyboard();
 
-        writebankcard_mobileedit.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                mCustomKeyboard.showKeyboard();
-                return false;
-            }
+        mCustomKeyboard.hideKeyboard();
+
+        writebankcard_mobileedit.setOnTouchListener((v, event) -> {
+            mCustomKeyboard.showKeyboard();
+            return false;
         });
+
+
+
     }
 
     //物理返回键
